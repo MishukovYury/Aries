@@ -1,0 +1,77 @@
+
+// colors
+:root{
+   --color-title: #8093FF;
+   --color-primary-dark:#232526;
+   --h1-title-size: 82px;
+   --h2-title-size: 62px;
+   --h3-title-size: 44px;
+   --h4-title-size: 26px;
+   --h5-title-size: 22px;
+   --h6-title-size: 16px;
+   --body-text: 16px;
+   --body-text-18: 18px;
+   --primary-title-color: #F4F4F4;
+   --secondary-title-color: #B8B8B8;
+   --purple-color: #99A9FF;
+   --color-light-dark: #353535;
+   
+}
+%ginora{
+  font-family: 'Ginora-sans', sans-serif;
+}
+%gilroy{
+  font-family: 'Gilroy', sans-serif;
+}
+%gradient{
+  background: conic-gradient(from 180deg at 50% 50%, #66FFE6 -160.13deg, #8093FF 42.37deg, #66FFE6 199.87deg, #8093FF 402.37deg);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+}
+%link{
+  color: var(--purple-color);
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url(../images/arrow-green25.svg);
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 50px;
+      background-position: top 7px right 10px;
+    }
+}
+/* H2 title - 62px */
+%h2-title{
+
+font-family: 'Ginora Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 62px;
+line-height: 74px;
+/* identical to box height, or 119% */
+
+text-transform: capitalize;
+
+color: #F4F4F4;
+
+}
+%border-bootom{
+  
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(128, 147, 255, 0.25) 0%,
+      #7d9bfa 21.14%,
+      #60dbd4 78.8%,
+      rgba(92, 228, 207, 0.25) 100%
+    );
+}
